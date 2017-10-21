@@ -1,0 +1,11 @@
+D:\TestProject\Houses\Houses\Houses\bin\Debug\netcoreapp2.0\Houses.deps.json
+D:\TestProject\Houses\Houses\Houses\bin\Debug\netcoreapp2.0\Houses.runtimeconfig.json
+D:\TestProject\Houses\Houses\Houses\bin\Debug\netcoreapp2.0\Houses.runtimeconfig.dev.json
+D:\TestProject\Houses\Houses\Houses\bin\Debug\netcoreapp2.0\Houses.dll
+D:\TestProject\Houses\Houses\Houses\bin\Debug\netcoreapp2.0\Houses.pdb
+D:\TestProject\Houses\Houses\Houses\obj\Debug\netcoreapp2.0\Houses.csprojResolveAssemblyReference.cache
+D:\TestProject\Houses\Houses\Houses\obj\Debug\netcoreapp2.0\Houses.csproj.CoreCompileInputs.cache
+D:\TestProject\Houses\Houses\Houses\obj\Debug\netcoreapp2.0\Houses.AssemblyInfoInputs.cache
+D:\TestProject\Houses\Houses\Houses\obj\Debug\netcoreapp2.0\Houses.AssemblyInfo.cs
+D:\TestProject\Houses\Houses\Houses\obj\Debug\netcoreapp2.0\Houses.dll
+D:\TestProject\Houses\Houses\Houses\obj\Debug\netcoreapp2.0\Houses.pdb
