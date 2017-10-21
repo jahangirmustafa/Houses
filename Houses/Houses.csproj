@@ -13,6 +13,15 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Models\enRepresented.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\enRepresentedcs" />
   </ItemGroup>
 
   <ItemGroup>

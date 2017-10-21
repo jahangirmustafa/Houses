@@ -298,7 +298,7 @@
             <div class="l-divider l-divider--big"></div>
             <h3>Past Sales</h3>
             <div class="c-content__sales">
-                <div class="c-content__sales-row">
+                <div class="c-content__sales-row" id="headerPastSale">
                     <div class="c-content__sales-col c-content__sales-col--property">
                         Property
                     </div>
@@ -312,7 +312,8 @@
                         Price
                     </div>
                 </div>
-                <div class="c-content__sales-row">
+               
+                @*<div class="c-content__sales-row">
                     <div class="c-content__sales-col c-content__sales-col--property">
                         <div class="c-content__sales-property-photo">
                             <img src="images/property/home5.jpg" alt="">
@@ -411,7 +412,9 @@
                     <div class="c-content__sales-col c-content__sales-col--price">
                         $1,265,000
                     </div>
-                </div>
+                </div>*@
+
+
                 <ul class="l-list l-list--pagination">
                     <li class="l-list__pagination-control l-list__pagination-control--prev l-list__pagination-control--disabled">
                         <a href="#"></a>
@@ -603,3 +606,43 @@
     </div>
 </div> 
 
+@section Scripts{ 
+
+<script type="text/javascript">
+
+    $(function () {
+        LoadPastSale();
+    });
+
+    function LoadPastSale() {
+        $.ajax({
+            type: 'GET',
+            url: '/AgentProfile/GetPastSale',
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                var html = '';
+                for (var i in data) {
+                   
+                    html += '<div class="c-content__sales-row">' +
+                        '<div class="c-content__sales-col c-content__sales-col--property">' +
+                        '<div class="c-content__sales-property-photo">' +
+                        '<img src="' + data[i].imagePath + '" alt=""> </div> </div>' +
+                        '<div class="c-content__sales-col c-content__sales-col--details">' +
+                        '<span class="c-content__sales-price">' + data[i].price +'</span> ' +
+                        '<span class="c-content__sales-location">' + data[i].location +'</span>' +
+                        '<span class="c-content__sales-address">' + data[i].address  +'</span>' +
+                        '<span class="c-content__sales-info">' + data[i].info +'</span>' +
+                        '<span class="c-content__sales-date">Sold date: ' + data[i].soldDate +'</span> </div>' +                        
+                        '<div class="c-content__sales-col c-content__sales-col--represented">' + data[i].represented +'</div>' +
+                        '<div class="c-content__sales-col c-content__sales-col--price">' + data[i].price +'</div>  </div>'
+                }
+
+                $('#headerPastSale').after(html);
+            }
+        });
+
+    }
+
+</script>
+
+}
