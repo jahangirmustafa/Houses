@@ -7,5 +7,6 @@ namespace Houses
 {
     public class TestClass
     {
+        public int Development { get; set; }
     }
 }
