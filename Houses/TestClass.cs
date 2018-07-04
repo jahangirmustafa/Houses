@@ -8,6 +8,6 @@ namespace Houses
     public class TestClass
     {
         public int Development { get; set; }
-        public int Development2 { get; set; }
+        public int MasterBranch { get; set; }
     }
 }
